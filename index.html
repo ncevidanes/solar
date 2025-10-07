@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarix - Energia Solar Inteligente</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .hero { text-align: center; padding: 4rem 1rem; }
+        .solar-calculator { 
+            background-color: var(--card-background-color); 
+            border: 1px solid var(--card-border-color);
+            border-radius: var(--card-border-radius);
+            padding: 2rem; 
+            margin-top: 2rem;
+            min-height: 150px;
+        }
+        .sunshine-result { color: var(--primary); font-size: 1.5rem; font-weight: bold; }
+        .grid-icons { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; text-align: center; }
+        .icon { font-size: 3rem; }
+        .cta { text-align: center; padding: 3rem 1rem; background-color: var(--primary-inverse); color: var(--primary); }
+    </style>
+</head>
+<body>
+
+    <header class="container hero">
+        <hgroup>
+            <h1>Transforme a Luz do Sol em Economia</h1>
+            <p>Instale painéis solares com a Solarix e veja sua conta de luz diminuir drasticamente.</p>
+        </hgroup>
+        
+        <div class="solar-calculator">
+            <h3>Potencial Solar da sua Localização Hoje</h3>
+            <p id="status-message">Para calcular, por favor, permita o acesso à sua localização...</p>
+            <div id="sunshine-output"></div>
+        </div>
+
+        <a href="#contato" role="button" class="contrast" style="margin-top: 1rem;">Peça um Orçamento Gratuito</a>
+    </header>
+
+    <main class="container">
+        <section id="vantagens">
+            <div class="grid-icons">
+                <article>
+                    <div class="icon">💰</div>
+                    <h4>Economia na Conta</h4>
+                    <p>Reduza sua fatura de energia em até 95% todos os meses.</p>
+                </article>
+                <article>
+                    <div class="icon">🌿</div>
+                    <h4>Energia Limpa</h4>
+                    <p>Gere sua própria energia de forma sustentável e ajude o planeta.</p>
+                </article>
+                <article>
+                    <div class="icon">🏠</div>
+                    <h4>Valorização do Imóvel</h4>
+                    <p>Imóveis com sistema de energia solar são mais valorizados no mercado.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="como-funciona" style="text-align: center;">
+            <h2>Simples, Rápido e Eficiente</h2>
+            <p>Nosso processo em 3 etapas:</p>
+            <div class="grid">
+                <div><strong>1. Análise:</strong> Estudamos seu consumo e projetamos o sistema ideal.</div>
+                <div><strong>2. Instalação:</strong> Nossa equipe especializada cuida de tudo rapidamente.</div>
+                <div><strong>3. Economia:</strong> Você começa a economizar assim que o sistema é ativado.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="cta">
+        <div class="container">
+            <h2>Pronto para começar a economizar?</h2>
+            <p>Fale com um de nossos especialistas agora mesmo e tire todas as suas dúvidas.</p>
+            <a href="#" role="button" class="secondary">Falar pelo WhatsApp</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
